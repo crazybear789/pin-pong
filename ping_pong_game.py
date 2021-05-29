@@ -19,12 +19,16 @@ class GameSprite(sprite.Sprite):
 class Player(GameSprite):
         def update(self):
             keys_pressed = key.get_pressed()
-            if keys_pressed[K_RIGHT] and self.rect.x < 635:
-                self.rect.x += self.speed
-            if keys_pressed[K_LEFT] and self.rect.x > 0:
-                self.rect.x -= self.speed    
+            if keys_pressed[K_RIGHT] and self.rect.y < 635:
+                self.rect.y += self.speed
+            if keys_pressed[K_LEFT] and self.rect.y > 0:
+                self.rect.y -= self.speed 
+class Ball(gameSprite):
+        def update(self):
+                if self.rect.y  == 
 player = Player('player', 20, 200, 10)
 player2 = Player('player', 560, 200, 10)
+ball = Ball('ball', 100, 100, 20)
 game = True 
 while game:
    
