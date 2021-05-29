@@ -26,9 +26,9 @@ class Player(GameSprite):
 class Ball(gameSprite):
         def update(self):
                 if self.rect.y  == 
-player = Player('player', 20, 200, 10)
-player2 = Player('player', 560, 200, 10)
-ball = Ball('ball', 100, 100, 20)
+player = Player('player.png', 20, 200, 10)
+player2 = Player('player.png', 560, 200, 10)
+ball = Ball('ball.png', 100, 100, 20)
 game = True 
 while game:
    
